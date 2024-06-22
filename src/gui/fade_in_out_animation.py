@@ -7,6 +7,18 @@ from src.gui.animation import Animation, Frame
 OPACITY_CHANGE_BY_STEP = 5
 DEFAULT_DELAY_BETWEEN_STEPS = 10
 
+branch_fade_in_out_animation = {
+    "branch_20": False,  
+    "branch_21": False,  
+    "branch_22": False,  
+    "branch_23": False  
+
+}
+
+def print_coverage_fade_in_out_animation():
+        for branch, hit in branch_fade_in_out_animation.items():
+            print(f"{branch} was {'hit' if hit else 'not hit'}") 
+        print("\n")  
 
 class FadeInOutAnimation(Animation):
     """
@@ -41,17 +53,20 @@ class FadeInOutAnimation(Animation):
 
         if self.timer == 0:
             is_animation_ended = self._process_next_animation_step()
-
         return is_animation_ended
 
     def _process_next_animation_step(self):
         if self.is_fade_in_finished:
+            branch_fade_in_out_animation["branch_20"] = True
             if self.current_opacity <= 0:
+                branch_fade_in_out_animation["branch_21"] = True
                 return True
             self.current_opacity -= OPACITY_CHANGE_BY_STEP
         else:
+            branch_fade_in_out_animation["branch_22"] = True
             self.current_opacity += OPACITY_CHANGE_BY_STEP
             if self.current_opacity >= 255:
+                branch_fade_in_out_animation["branch_23"] = True
                 self.current_opacity = 255
                 self.is_fade_in_finished = True
 
@@ -63,3 +78,6 @@ class FadeInOutAnimation(Animation):
         )
 
         return False
+
+       
+

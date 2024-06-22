@@ -16,6 +16,7 @@ from pygamepopup.components import BoxElement, Button, InfoBox, TextElement
 from pygamepopup.components.image_button import ImageButton
 from pygamepopup.menu_manager import MenuManager
 
+
 from src.constants import (BLACK, GRID_HEIGHT, GRID_WIDTH,
                            ITEM_DELETE_MENU_WIDTH, ITEM_INFO_MENU_WIDTH,
                            ITEM_MENU_WIDTH, MAX_MAP_HEIGHT, MENU_HEIGHT,
@@ -107,7 +108,19 @@ class EntityTurn(IntEnum):
             self.value + 1 if self.value + 1 < len(EntityTurn.__members__) else 0
         )
         return EntityTurn(next_value)
+    
+branch_level_scene = {
+    "branch_24": False,  
+    "branch_25": False,  
+    "branch_26": False,  
+    "branch_27": False  
 
+}
+
+def print_coverage_level_scene():
+        for branch, hit in branch_level_scene.items():
+            print(f"{branch} was {'hit' if hit else 'not hit'}") 
+        print("\n")    
 
 class LevelScene(Scene):
     """
@@ -400,11 +413,15 @@ class LevelScene(Scene):
 
     def _determine_players_initial_position(self):
         for player in self.players:
+            branch_level_scene["branch_24"] = True
             for tile in self.player_possible_placements:
+                branch_level_scene["branch_25"] = True
                 if self.get_entity_on_tile(tile) is None:
+                    branch_level_scene["branch_26"] = True
                     player.set_initial_pos(tile)
                     break
             else:
+                branch_level_scene["branch_27"] = True
                 print(STR_ERROR_NOT_ENOUGH_TILES_TO_SET_PLAYERS)
 
     def open_save_menu(self) -> None:
