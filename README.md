@@ -57,7 +57,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/239c7a62de721205426e51c7cee59f84a9274f60
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/act_code.jpg?raw=true)
 
 Coverage results for Movable.act() by the instrumentation:
 
@@ -71,7 +71,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/8a1ac2fd767d56f285e873cebe08a4beadab000c
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/load_buildings_code.jpg?raw=true)
 
 Coverage results for load_buildings() by the instrumentation:
 
@@ -161,7 +161,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/Grimmys/rpg_tactical_fantasy_game/commit/f403703fd27ddd09c42b5cd4beaf63eb315be1d8
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/testAct_code.jpg?raw=true)
 
 Screenshots of the old coverage results for the function and the file:
 
@@ -187,7 +187,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/Grimmys/rpg_tactical_fantasy_game/commit/a9829085f8bb930bc60e70d92f4874cd434fb539
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/testLoad_B_code.jpg?raw=true)
 
 Screenshots of the old coverage results for the function and the file:
 
