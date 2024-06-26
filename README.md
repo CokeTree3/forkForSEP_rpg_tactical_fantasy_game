@@ -86,7 +86,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/07c88bbe0ca1c3f352e12f2197b0ab0e5145781c
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/process_next_code.jpg?raw=true)
 
 Coverage results for _process_next_animation_step() by the instrumentation:
 
@@ -100,7 +100,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/285b011c6ffed9bdf20ab95728948c2814445f12
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/determine_players_code.jpg?raw=true)
 
 Coverage results for _determine_players_initial_position() by the instrumentation:
 
@@ -216,7 +216,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/50088ff98b837c8b2d3701ff5c502bc0d4118f14
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/process_next_test.jpg?raw=true)
 
 Screenshot of the old coverage results for the function and the file:
 
@@ -242,7 +242,7 @@ Patch (diff) and link to commit with the instrumented code:
 
 https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/commit/7c0a06fbd39bcec9cef8fd86a8fea29d3cfc7501
 
-(HAVE TO GET NEW SCREENSHOT!!)
+![alt text](https://github.com/CokeTree3/forkForSEP_rpg_tactical_fantasy_game/blob/master/doc_img/determine_players_test.jpg?raw=true)
 
 Screenshot of the old coverage results for the function and the file:
 
